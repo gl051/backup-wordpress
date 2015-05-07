@@ -1,26 +1,28 @@
 # backup-wordpress
 
-Utility to create a full backup of a WordPress website, it first creates a backup of the database and then a backup of the site's files. 
+Utility to create a full backup of a WordPress website, it first creates a backup of the database and then a backup of the site files. Two tar files are generated, plus a log for the execution history. 
 
 The solution consists in two files:
 
--- run-backup.sh --
+*****************************
+*      run-backup.sh        *
+*****************************
 
 $> run-backup.sh sitename 
 
-It backups both the database and site files. This batch must run on the server and it is reccomended to execute it as a chron job. When you call the batch file provide the site name, the site name represents the root publich folder of the site on the server, in case of a subdomain this is something like 
+It does a backup of both the database and the site files. The script must run on the server where the site is hosted, it could be scheduled as a chron job to automate the process. The only parameter to provide is 'sitename' which represents the root of the public site on the server, in case you use a subdomain this is something like 
 
 public_html/$SITE_NAME, 
 
-otherwise put . as SITENAME.
+incase you do not use a subdomain you should put the current folder . as sitename.
 
-Note: at the moment I am using this batch files for situations like subdomains.
-
--- download-backup -- 
+*****************************
+*    download-backups.sh    *
+*****************************
 
 $> download-backup.sh
 
-download the backup files from the server to the local hard disk
+It  downloads the backup files from the server to the local hard disk. There are three parameters inside the script to be changed based on your configuration needs.
 
 
 
