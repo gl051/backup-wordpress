@@ -4,9 +4,9 @@ Utility to create a full backup of a WordPress website, it first creates a backu
 
 The solution consists in two files:
 
-*****************************
-*      run-backup.sh        *
-*****************************
+
+
+1) run-backup.sh
 
 $> run-backup.sh sitename 
 
@@ -16,9 +16,7 @@ public_html/$SITE_NAME,
 
 incase you do not use a subdomain you should put the current folder . as sitename.
 
-*****************************
-*    download-backups.sh    *
-*****************************
+2) download-backups.sh
 
 $> download-backup.sh
 
