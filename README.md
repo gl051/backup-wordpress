@@ -6,7 +6,7 @@ The solution consists in two files:
 
 -- run-backup.sh --
 
-$> run-backup.sh <site-name> 
+$> run-backup.sh sitename 
 
 It backups both the database and site files. This batch must run on the server and it is reccomended to execute it as a chron job. When you call the batch file provide the site name, the site name represents the root publich folder of the site on the server, in case of a subdomain this is something like 
 
