@@ -1,6 +1,9 @@
 #!/bin/bash
 # Author Gianluca Biccari
 
+# usage: 
+#	shell:$> run_backup [site_root_folder]
+
 # Get site name which must be a parameter provided
 if [ $# -eq 0 ]
   then

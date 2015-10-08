@@ -1,6 +1,10 @@
 #!/bin/bash
 # Author Gianluca Biccari
-# Synchronize remote backup directory with a local directory, then remove files succesfully transfered.
+# Synchronize remote backup directory with a local directory, 
+# then remove files succesfully transfered.
+
+# usage: 
+#	shell:$> download_backup
 
 # Edit the following parameters according with your situation
 REMOTE_LOCATION=www.biccari.com
